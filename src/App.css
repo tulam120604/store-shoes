@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    .body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .headerBox {
+            width: 100%;
+            display: flex;
+            justify-content: center
+        }
+
+        .fa_container {
+            width: 90%;
+            height: 99%;
+            /* background: linear-gradient(rgb(132, 0, 208), rgb(0, 111, 189)); */
+            border-radius: 5px;
+        }
+    }
+
+}

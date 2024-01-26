@@ -1,0 +1,86 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "../src/images/sp1.png",
+            "name": "neki runing boots",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 2,
+            "image": "../src/images/sp2.png",
+            "name": "neki running boots",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 3,
+            "image": "../src/images/sp3.png",
+            "name": "neki running shoes",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 4,
+            "image": "../src/images/sp4.png",
+            "name": "neki running shoes",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 5,
+            "image": "../src/images/sp5.png",
+            "name": "neki running sandals",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 6,
+            "image": "../src/images/sp6.png",
+            "name": "neki running sandals",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 7,
+            "image": "../src/images/sp1.png",
+            "name": "neki running boots",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        },
+        {
+            "id": 8,
+            "image": "../src/images/sp2.png",
+            "name": "neki running shoes",
+            "price": 210,
+            "title": "running neki - collection 2024",
+            "feedback": 4.9
+        }
+    ],
+    "danh_muc": [
+        {
+            "id": 1,
+            "name": "all"
+        },
+        {
+            "id": 2,
+            "name": "boots"
+        },
+        {
+            "id": 3,
+            "name": "shoes"
+        },
+        {
+            "id": 4,
+            "name": "sandals"
+        }
+    ]
+}

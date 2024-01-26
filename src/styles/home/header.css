@@ -1,0 +1,120 @@
+.header {
+    width: 90%;
+    /* position: fixed; */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        .logo {
+            cursor: pointer;
+
+            span {
+                font-size: 30px;
+                font-weight: 500;
+                font-family: Impact, Haettenschweiler;
+                text-transform: uppercase;
+                font-style: italic;
+                color: rgb(216, 6, 6);
+            }
+        }
+
+        .navbar {
+            margin: 10px 0 10px 250px;
+
+            li {
+                display: inline-block;
+                list-style: none;
+                text-transform: uppercase;
+                margin: 0 20px;
+                font-size: 16px;
+                cursor: pointer;
+                position: relative;
+            }
+
+            li::after {
+                content: '';
+                width: 0;
+                height: 3px;
+                background: rgb(255, 60, 0);
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                border-radius: 10px;
+            }
+
+            li:hover::after {
+                width: 100%;
+                transition: 0.5s;
+            }
+
+            li:hover {
+                color: rgb(255, 60, 0);
+                transition: 0.5s;
+            }
+        }
+
+        .menu {
+            display: flex;
+
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                margin: 10px 15px;
+                cursor: pointer;
+                position: relative;
+
+                img:hover {
+                    transform: scale(1.05);
+                    transition: 0.2s;
+                }
+
+                button {
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    border-bottom: 3px solid rgb(255, 60, 0);
+                    padding: 3px 20px;
+                    border-radius: 10px;
+                    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+
+            .search {
+                position: absolute;
+                top: 30px;
+
+                input {
+                    border: none;
+                    border-radius: 5px;
+                    padding: 2px 30px 0 10px;
+                    outline: none;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: tahoma;
+                    letter-spacing: 1px;
+                }
+
+                img {
+                    position: absolute;
+                    top: 2px;
+                    right: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
