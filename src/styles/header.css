@@ -1,12 +1,12 @@
 .header {
     width: 90%;
-    /* position: fixed; */
 
+    /* position: fixed; */
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 65px;
+        height: 85px;
         font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
         .logo {
@@ -42,7 +42,7 @@
                 background: rgb(255, 60, 0);
                 position: absolute;
                 left: 0;
-                bottom: -10px;
+                bottom: -30px;
                 border-radius: 10px;
             }
 

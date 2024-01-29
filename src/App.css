@@ -16,7 +16,8 @@ body {
         .headerBox {
             width: 100%;
             display: flex;
-            justify-content: center
+            justify-content: center;
+            height: 85px;
         }
 
         .fa_container {

@@ -1,0 +1,119 @@
+.oneProduct {
+    width: 90%;
+    margin: 150px 0;
+
+    .box_infor_products {
+        width: 100%;
+        height: 500px;
+        display: flex;
+
+        .left {
+            width: 60%;
+
+            img {
+                width: 80%;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0 100px 50px;
+            }
+
+            .img_mini {
+                display: flex;
+                float: inline-start;
+
+                img {
+                    width: 100px;
+                    border: 1px solid gray;
+                    padding: 10px;
+                    margin-right: 20px;
+                    border-radius: 4px;
+                }
+
+                img:hover {
+                    cursor: pointer;
+                    scale: 1.05;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        /* right */
+        .right {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-size: 25px;
+                text-transform: capitalize;
+                -webkit-text-stroke: 1px;
+                letter-spacing: 0.5px;
+            }
+
+            p {
+                font-size: 18px;
+                opacity: 0.7;
+                letter-spacing: 0.3px;
+            }
+
+            .rating {
+                margin: 30px 0;
+
+                section {
+                    display: flex;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin: 3px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        -webkit-text-stroke: 0;
+                        opacity: 0.7;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            h6 {
+                font-size: 30px;
+                -webkit-text-stroke: 1px;
+                letter-spacing: 0.5px;
+                margin-bottom: 30px;
+            }
+
+            .add {
+                display: flex;
+
+                select {
+                    background: none;
+                    border: 1px solid gray;
+                    height: 40px;
+                    padding: 0 20px;
+                    margin: 10px 10px 10px 0;
+                    width: 100px;
+                    text-transform: capitalize;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+
+                button {
+                    padding: 5px 30px;
+                    margin: 10px 10px 10px 0;
+                    border-radius: 20px;
+                    text-transform: capitalize;
+                    height: 40px;
+                }
+
+                button:hover {
+                    transition: 0.3s;
+                    scale: 1.05;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

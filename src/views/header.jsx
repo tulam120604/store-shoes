@@ -1,6 +1,10 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
+import { Link } from 'react-router-dom'
 import { useState } from 'react';
-import 'E:/Shoes_Store/src/styles/home/header.css'
+import 'E:/Shoes_Store/src/styles/header.css'
+
+
 
 const HeaderComponent = ({ themeBg }) => {
   let imgColor;
@@ -31,12 +35,16 @@ const HeaderComponent = ({ themeBg }) => {
       <div style={{ background: headerColor, transition: '0.5s' }} className="header">
         <header>
           <div className="logo">
-            <span>neki</span>
+            <Link to='/'><span>neki</span></Link>
           </div>
 
           <div className="navbar">
-            <li>home</li>
-            <li>products</li>
+            <li>
+              <Link to="/">home</Link>
+            </li>
+            <li>
+              <Link to="/products">products</Link>
+            </li>
             <li>about</li>
             <li>contact</li>
           </div>
@@ -57,10 +65,8 @@ const HeaderComponent = ({ themeBg }) => {
             <li><button>login</button></li>
           </div>
         </header>
-
+        {/* Router */}
       </div>
-
-
     </>
   )
 }

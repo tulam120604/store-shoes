@@ -1,0 +1,149 @@
+.Arrivals {
+    width: 100%;
+    margin-top: 150px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    h5 {
+        font-size: 4em;
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+        -webkit-text-stroke: 2px;
+        color: rgb(255, 204, 0);
+        margin-bottom: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .block_arrivals {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-items: end;
+        position: relative;
+        top: 20px;
+
+        .box_arrivals {
+            display: flex;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            height: 350px;
+            margin-bottom: 30px;
+
+            .infor {
+                width: 80%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                background: #3D6066;
+                border-radius: 20px;
+
+                .element {
+                    position: relative;
+                    left: 50px;
+                }
+
+
+                span {
+                    font-size: 20px;
+                    -webkit-text-stroke: 0.4px;
+                    letter-spacing: 0.5px;
+                }
+
+                P {
+                    margin: 10px 0;
+                    font-size: 16px;
+                    opacity: 0.8;
+
+                }
+
+                section {
+                    display: flex;
+                    letter-spacing: 1px;
+                    margin: 5px 0 10px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 5px;
+                    }
+                }
+
+                button {
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 20px;
+                    background: white;
+                    color: black;
+                    text-transform: capitalize;
+                    margin: 50px 0 10px;
+
+                }
+
+                button:hover {
+                    scale: 1.05;
+                    transition: 0.3s;
+                }
+
+
+
+            }
+
+            .img {
+                width: 20%;
+                position: relative;
+                right: 150px;
+                display: flex;
+                align-items: center;
+                top: -50px;
+
+                img {
+                    scale: 3;
+                    transform: rotate(-40deg);
+                }
+            }
+        }
+
+        .box_arrivals:hover {
+            transition: 0.5s;
+            cursor: pointer;
+
+            .infor {
+                justify-content: flex-end;
+                transition: 0.3s;
+                height: 100%;
+
+
+
+                .element {
+                    position: relative;
+                    top: 50px;
+                    transition: 0.3s;
+
+                }
+
+                button {
+                    float: inline-end;
+                    position: relative;
+                    right: 100px;
+                    top: -80px;
+                    transition: 0.3s;
+
+                }
+            }
+
+            .img {
+                img {
+                    scale: 2.5;
+                    transform: rotate(0deg);
+                    position: relative;
+                    top: -20px;
+                    right: 100%;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

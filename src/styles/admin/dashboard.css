@@ -1,0 +1,64 @@
+.bi {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+}
+
+/*
+   * Sidebar
+   */
+
+@media (min-width: 768px) {
+    .sidebar .offcanvas-lg {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 48px;
+    }
+
+    .navbar-search {
+        display: block;
+    }
+}
+
+.sidebar .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar .nav-link.active {
+    color: #014db9;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+}
+
+/*
+   * Navbar
+   */
+
+
+
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+}
+
+/* --------------- */
+.dasboard {
+    width: 90%;
+
+    header {
+        width: 90%;
+        height: 85px;
+        position: fixed;
+        z-index: 10;
+    }
+
+    main {
+        width: 80%;
+        height: 600px;
+        border: 1px solid red;
+        margin-bottom: 50px;
+    }
+}

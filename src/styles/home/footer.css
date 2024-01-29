@@ -1,0 +1,112 @@
+.footer {
+    width: 90%;
+    border-top: 2px solid #9E9E9E;
+
+    display: grid;
+    grid-template-columns: 35% 20% 20% 15%;
+    column-gap: 3.3%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-size: 30px;
+            font-weight: 500;
+            font-family: Impact, Haettenschweiler;
+            text-transform: uppercase;
+            font-style: italic;
+            color: rgb(216, 6, 6);
+            cursor: default;
+        }
+
+        p {
+            margin: 10px 0 50px;
+            font-size: 16px;
+            opacity: 0.8;
+            font-weight: 400;
+            cursor: default;
+        }
+
+        input {
+            width: 90%;
+            height: 50px;
+            outline: none;
+            border: 2px solid #9E9E9E;
+            background: none;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+
+    .box2 {
+        span {
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+            cursor: default;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+
+        li:nth-child(3) {
+            margin-top: 10px;
+        }
+    }
+
+    .box3 {
+        span {
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+            cursor: default;
+
+        }
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+            opacity: 0.7;
+            text-transform: capitalize;
+            cursor: default;
+        }
+
+        li:nth-child(2) {
+            margin-top: 10px;
+        }
+    }
+
+    .box4 {
+        span {
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+
+        }
+
+        section {
+            display: flex;
+            margin-top: 10px;
+
+            img {
+                margin: 0 5px;
+                background: #C7D4D9;
+                border-radius: 10px;
+                padding: 5px;
+            }
+
+            img:hover {
+                scale: 1.05;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
