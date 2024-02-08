@@ -24,7 +24,7 @@ const add_DanhMuc = async (danh_muc_moi) => {
 
 const delete_danhMuc = async (id_dm) => {
     try {
-        const { data } = await instance.delete(`/danh_muc`, id_dm);
+        const { data } = await instance.delete(`/danh_muc/${id_dm}`);
         return data
     } catch (error) {
         console.log(error);

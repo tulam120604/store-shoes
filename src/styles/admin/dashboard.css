@@ -1,64 +1,170 @@
-.bi {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
+/* .dashboard {
+    width: 100%;
+    border: 1px solid red;
+    top: 0;
 }
 
-/*
-   * Sidebar
-   */
-
-@media (min-width: 768px) {
-    .sidebar .offcanvas-lg {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 48px;
-    }
-
-    .navbar-search {
-        display: block;
-    }
-}
-
-.sidebar .nav-link {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.sidebar .nav-link.active {
-    color: #014db9;
-}
-
-.sidebar-heading {
-    font-size: .75rem;
-}
-
-/*
-   * Navbar
-   */
-
-
-
-
-.navbar .form-control {
-    padding: .75rem 1rem;
-}
-
-/* --------------- */
-.dasboard {
-    width: 90%;
+/* header */
+.HeaderAdmin {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 85px;
+    display: flex;
+    justify-content: center;
 
     header {
         width: 90%;
-        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            cursor: pointer;
+
+            span {
+                font-size: 30px;
+                font-weight: 500;
+                font-family: Impact, Haettenschweiler;
+                text-transform: uppercase;
+                font-style: italic;
+                color: rgb(216, 6, 6);
+            }
+        }
+
+        .menu {
+            display: flex;
+
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                margin: 10px 15px;
+                cursor: pointer;
+                position: relative;
+            }
+        }
+    }
+}
+
+section {
+    width: 90%;
+    /* display: flex; */
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* home */
+.homeAdmin {
+    width: 80%;
+    margin-top: 85px;
+}
+
+/* dashboars */
+.blockDashboard {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+    top: 85px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 15% 84%;
+    column-gap: 1%;
+    height: 100%;
+
+
+    /* navbar */
+    .navbarAdmin {
+        width: 15%;
+        height: 100%;
         position: fixed;
-        z-index: 10;
+
+        li {
+            width: 100%;
+            margin-bottom: 20px;
+            list-style: none;
+            padding: 10px;
+            font-size: 20px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        li:nth-last-child(1) {
+            margin-bottom: 70px;
+        }
+
+        li:hover {
+            cursor: pointer;
+            background: rgb(119, 205, 245);
+            transition: 0.3s;
+        }
     }
 
-    main {
-        width: 80%;
-        height: 600px;
-        border: 1px solid red;
-        margin-bottom: 50px;
+    /*  */
+    .mainAdmin {
+        height: 100%;
+
+        section {
+            margin-top: 20px;
+            width: 100%;
+            height: 55px;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            background: rgb(119, 205, 245);
+
+            button {
+                border-radius: 10px;
+                height: 40px;
+                padding: 5px 10px;
+            }
+
+            button:hover {
+                scale: 1.02;
+            }
+        }
     }
+}
+
+.footerAdmin {
+    background: #121212;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* add products */
+.addProductsAdmin {
+    text-transform: capitalize;
+
+    input {
+        border-radius: 2px;
+        margin-top: 10px;
+        background: none;
+        border: 1px solid gray;
+        width: 70%;
+        padding: 0 20px;
+    }
+
+    h3 {
+        display: inline-block;
+    }
+
+    .form_count {
+        margin-bottom: 10px;
+    }
+
+    .form_count label {
+        display: inline-block;
+        width: 5em;
+    }
+
 }

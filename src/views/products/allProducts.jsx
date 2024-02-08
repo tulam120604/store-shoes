@@ -6,31 +6,60 @@ import { Link } from 'react-router-dom';
 
 
 const AllProducts = ({ all_san_pham, wrapper }) => {
-    // console.log(all_san_pham);
-
     // theme
     let theme;
-    let backgroundRating
-    let backgroundButton
+
     if (wrapper) {
         theme = 'brightness(1) invert(0)';
-        backgroundRating = 'white';
-        backgroundButton = 'black'
+
     }
     else {
         theme = 'brightness(0) invert(1)';
-        backgroundRating = 'black';
-        backgroundButton = 'white';
+
     }
 
     // baner:
     for (let i = 0; i < all_san_pham.length; i++) {
-        console.log(i);
+        // console.log(i);
     }
 
 
+    // phân trang
+    let thisPage = 1;
+    let limit = 9;
+    const page1 = [];
+    const loadItem = () => {
+        let beginGet = limit * (thisPage - 1);
+        let endGet = limit * thisPage - 1;
+        all_san_pham.forEach((item, index) => {
+            if (index >= beginGet && index <= endGet) {
+                page1.push(all_san_pham[index]);
+            }
+        });
+    }
+    loadItem()
 
+    // load list page
+    const Page = []
+    const listPage = () => {
+        let countPage = Math.ceil(all_san_pham.length / limit);
+        for (let i = 1; i <= countPage; i++) {
+            Page.push(i);
+        }
+    }
+    listPage()
 
+    const handlePage = (d) => {
+        console.log(d);
+    }
+
+    const renderListPage = (dataCallback) => {
+        return (dataCallback.map((itemPage, index) => {
+            return (<>
+                <button onClick={handlePage(index + 1)}>{itemPage}</button>
+            </>)
+        }))
+    }
 
     // list products :
     const renderAll = (dataAll) => {
@@ -38,29 +67,28 @@ const AllProducts = ({ all_san_pham, wrapper }) => {
             dataAll.map((sanPham, i) => {
                 return (
                     <>
-                        <div className="box" key={i}>
-                            <Link to={`/products/${sanPham.id}`}>
-                                <div className="infor">
-                                    <span>{sanPham.name}{i + 1}</span>
-                                    <h3>{sanPham.title}</h3>
-                                </div>
+                        <div className="box drop-shadow-lg" key={i}>
+                            <Link style={{ width: '100%' }} to={`/products/${sanPham.id}`}>
                                 <div className="image">
                                     <img src={sanPham.image} alt="" />
                                 </div >
-                                <p>$ {sanPham.price}</p>
                             </Link>
-
-                            <div className="rating">
+                            <div className="inforAllProductsPageClient">
+                                <Link to={`/products/${sanPham.id}`}>
+                                    <span>{sanPham.name}</span>
+                                </Link>
+                                {/* <h3>{sanPham.title}</h3> */}
+                                <p>${sanPham.price}</p>
                                 <section>
                                     <img src="../src/images/star.png" alt="" />
                                     <img src="../src/images/star.png" alt="" />
                                     <img src="../src/images/star.png" alt="" />
                                     <img src="../src/images/star.png" alt="" />
                                     <img src="../src/images/star.png" alt="" />
-                                    <span>(45)</span>
                                 </section>
-                                <button style={{ background: backgroundButton, color: backgroundRating }}>+ add to cart</button>
+                                <button>+ add to cart</button>
                             </div>
+
                         </div>
                     </>
                 )
@@ -84,19 +112,53 @@ const AllProducts = ({ all_san_pham, wrapper }) => {
                     id='right' src="../src/images/right.png" alt="" />
             </div>
 
-            {/* menu */}
+            <span className='capitalize font-medium'>home &#8594; shop</span>
 
-            <div className="menuProducts">
-                <li>all</li>
-                <li>men</li>
-                <li>kids</li>
-                <li>sale</li>
-            </div>
+            <div className="main_allProducts">
+                {/* menu */}
 
-            {/* list products */}
+                <div className="menuProducts">
+                    <div className="categories">
+                        <span>categories</span>
+                        <section>
+                            <li>men</li>
+                            <li>women</li>
+                            <li>kids</li>
+                        </section>
+                    </div>
 
-            <div className="listProducts">
-                {renderAll(all_san_pham)}
+                    {/* -- */}
+                    <div className="priceAllProdducts">
+                        <span>price</span>
+                        <select name="" id="">
+                            <option value="1">low - hight &#8593;</option>
+                            <option value="2">hight - low &#8595;</option>
+                        </select>
+                    </div>
+
+                    {/* --- */}
+                    <div className="sizeAllPriducts">
+                        <span>size</span>
+                        <section>
+                            <button>s</button>
+                            <button>m</button>
+                            <button>l</button>
+                            <button>xs</button>
+                        </section>
+                    </div>
+                </div>
+
+                {/* list products */}
+
+                <div className="listProducts">
+                    <div className="pageAllProducts">
+                        {renderAll(page1)}
+                    </div>
+                    {/* next page */}
+                    <div className="next_page_allProducts">
+                        {renderListPage(Page)}
+                    </div>
+                </div>
             </div>
         </div>
     </>)

@@ -1,0 +1,405 @@
+{
+  "danh_muc": [
+    {
+      "id": 1,
+      "name": "new arrival"
+    },
+    {
+      "id": 2,
+      "name": "best sellers"
+    },
+    {
+      "id": 3,
+      "name": "hot sale"
+    },
+    {
+      "id": 4,
+      "name": "featured"
+    }
+  ],
+  "productsAll": [
+    {
+      "id": 1,
+      "image": "../src/images/grapefruit.png",
+      "name": "grape",
+      "price": "220",
+      "title": "running neki - collection 2024",
+      "feedback": "4"
+    },
+    {
+      "id": 2,
+      "image": "../src/images/orange.png",
+      "name": "orange",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 3,
+      "image": "../src/images/apple.png",
+      "name": "apple",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 4,
+      "image": "../src/images/tangerine.png",
+      "name": "tangerine",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 5,
+      "image": "../src/images/melon.png",
+      "name": "melon",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 6,
+      "image": "../src/images/banana.png",
+      "name": "banana",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 7,
+      "image": "../src/images/watermelon.png",
+      "name": "watermelon",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 8,
+      "image": "../src/images/coconut.png",
+      "name": "coconut",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 9,
+      "image": "../src/images/orange.png",
+      "name": "orange",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 10,
+      "image": "../src/images/apple.png",
+      "name": "apple",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 11,
+      "image": "../src/images/tomato.png",
+      "name": "tomato",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 12,
+      "image": "../src/images/potato.png",
+      "name": "potato",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 13,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 14,
+      "image": "../src/images/kohlrabi.png",
+      "name": "kohlrabi",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 15,
+      "image": "../src/images/onion.png",
+      "name": "onion",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 16,
+      "image": "../src/images/apple.png",
+      "name": "apple",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 17,
+      "image": "../src/images/banana.png",
+      "name": "banana",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 18,
+      "image": "../src/images/coconut.png",
+      "name": "coconut",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 19,
+      "image": "../src/images/grape.png",
+      "name": "grape",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 20,
+      "image": "../src/images/orange.png",
+      "name": "orange",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9
+    },
+    {
+      "id": 21,
+      "image": "../src/images/melon.png",
+      "name": "melon",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": "4",
+      "new": 2,
+      "sector": "spec"
+    },
+    {
+      "id": 22,
+      "image": "../src/images/kohlrabi.png",
+      "name": "kohlrabi",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "po"
+    },
+    {
+      "id": 23,
+      "image": "../src/images/onion.png",
+      "name": "onion",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "rec"
+    },
+    {
+      "id": 24,
+      "image": "../src/images/potato.png",
+      "name": "potato",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "spec"
+    },
+    {
+      "id": 25,
+      "image": "../src/images/coconut.png",
+      "name": "coconut",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "po"
+    },
+    {
+      "id": 26,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "rec"
+    },
+    {
+      "id": 27,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "spec"
+    },
+    {
+      "id": 28,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "po"
+    },
+    {
+      "id": 29,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "rec"
+    },
+    {
+      "id": 30,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "spec"
+    },
+    {
+      "id": 31,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "po"
+    },
+    {
+      "id": 32,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "rec"
+    },
+    {
+      "id": 33,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "spec"
+    },
+    {
+      "id": 34,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "po"
+    },
+    {
+      "id": 35,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "rec"
+    },
+    {
+      "id": 36,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "spec"
+    },
+    {
+      "id": 37,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "po"
+    },
+    {
+      "id": 38,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "rec"
+    },
+    {
+      "id": 39,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 2,
+      "sector": "spec"
+    },
+    {
+      "id": 40,
+      "image": "../src/images/cabbage.png",
+      "name": "cabbage",
+      "price": 210,
+      "title": "running neki - collection 2024",
+      "feedback": 4.9,
+      "new": 1,
+      "sector": "po"
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "name": "dashboard",
+      "path": ""
+    },
+    {
+      "id": 2,
+      "name": "catelories",
+      "path": "catelories-manager"
+    },
+    {
+      "id": 3,
+      "name": "products",
+      "path": "products-manager"
+    },
+    {
+      "id": 4,
+      "name": "account",
+      "path": "accountAdmin"
+    }
+  ],
+  "users": []
+}

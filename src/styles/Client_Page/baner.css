@@ -1,0 +1,95 @@
+.baner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+
+    .block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background: #0F222B; */
+        border-radius: 5px;
+
+        .name {
+            width: 35%;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                width: 100%;
+
+                span {
+                    font-size: 4em;
+                    -webkit-text-stroke: 5px;
+                    letter-spacing: 4px;
+                    font-style: italic;
+                    margin: -10px 0;
+                }
+
+            }
+
+            p {
+                font-size: 1.2em;
+                opacity: 0.7;
+                margin: 15px 0 60px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background: orange;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            button:hover {
+                scale: 1.02;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+        }
+
+
+        .box-img {
+            width: 55%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            /* background: rgb(247, 245, 217); */
+            /* border-radius: 35% 65% 0% 100% / 100% 0% 100% 0%; */
+            --mask: conic-gradient(from 20deg at left, #0000, #000 1deg 139deg, #0000 140deg) 50%/100% 280.24px;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+
+            img {
+                width: 80%;
+                height: 90%;
+                z-index: 1;
+            }
+        }
+    }
+
+    .count_page {
+        margin-top: 50px;
+        display: flex;
+
+        section {
+            cursor: pointer;
+            margin: 0 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: gray;
+        }
+
+        section:hover {
+            scale: 1.2;
+            transition: 0.3s;
+        }
+    }
+}

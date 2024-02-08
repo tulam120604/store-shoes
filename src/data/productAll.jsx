@@ -20,7 +20,7 @@ const getOneProductsAll = async (id) => {
 
 const deleteProductsAll = async (id) => {
     try {
-        const { data } = await instance.delete(`/productsAll${id}`)
+        const { data } = await instance.delete(`/productsAll/${id}`)
         return data
     } catch (error) {
         console.log(error);
@@ -28,8 +28,9 @@ const deleteProductsAll = async (id) => {
 }
 
 const addProductsAll = async (san_pham_moi) => {
+    // upload file
     try {
-        const { data } = await instance.post(`/productsAll${san_pham_moi}`)
+        const { data } = await instance.post(`/productsAll`, san_pham_moi)
         return data
     } catch (error) {
         console.log(error);
