@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import 'E:/Shoes_Store/src/styles/Client_Page/cart.css'
+import '../../styles/Client_Page/cart.css'
 
 const Cart_Page = () => {
     return (<>

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import 'E:/Shoes_Store/src/styles/admin/dashboard.css'
+import '../../styles/admin/dashboard.css'
 
 const AllProductsAdmin = ({ SP, onRemove }) => {
     const SPHot = SP.hot;

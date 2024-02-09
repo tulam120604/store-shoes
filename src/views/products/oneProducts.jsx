@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
-import 'E:/Shoes_Store/src/styles/products/oneProducts.css'
+import '../../styles/products/oneProducts.css'
 import { useParams } from 'react-router-dom';
 import { getOneProductsAll } from '../../data/productAll';
 const OneProductsComponent = ({ wrapper }) => {

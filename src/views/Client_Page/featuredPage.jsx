@@ -3,7 +3,7 @@
 // import { useState } from 'react'
 // import { Carousel } from 'react-responsive-carousel';
 // import { useEffect } from 'react'
-import 'E:/Shoes_Store/src/styles/Client_Page/featuredPage.css'
+import '../../styles/Client_Page/featuredPage.css'
 import { Link } from 'react-router-dom'
 
 const FeaturedPage = ({ wrapperBg, ProductPage, CateloriesHomePage }) => {

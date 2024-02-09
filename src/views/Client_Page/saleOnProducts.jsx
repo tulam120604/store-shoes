@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from 'react-router-dom'
-import 'E:/Shoes_Store/src/styles/Client_Page/saleOnProducts.css'
+import '../../styles/Client_Page/saleOnProducts.css'
 // eslint-disable-next-line no-unused-vars
 const SaleOnProductsPage = ({ wrapperBg }) => {
     let opacityImg = (wrapperBg.wrapper) ? '0.9' : '0.5'

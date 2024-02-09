@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
-import 'E:/Shoes_Store/src/styles/Client_Page/Arrivals.css'
+import '../../styles/Client_Page/Arrivals.css'
 import { Link } from 'react-router-dom'
 
 
@@ -51,8 +51,6 @@ const NewArrivals = ({ ProductPage, add }) => {
     // trang speacial
     const dataPageRecent = dataRecent.slice(itemFirstPage, itemLastPage);
     const tongSoPage = Math.ceil(newProducts.length / soLuongItemPage);
-    // setNextPage(dataPage)
-    // console.log(nextPage);
 
     // previous
     const pre = () => {

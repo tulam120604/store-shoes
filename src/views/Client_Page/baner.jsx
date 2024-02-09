@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
 import { Link } from 'react-router-dom'
-import 'E:/Shoes_Store/src/styles/Client_Page/baner.css'
+import '../../styles/Client_Page/baner.css'
 
 const BanerComponent = ({ BannerBg, ProductsBaner }) => {
     let bg = (BannerBg.BgColor) ? '#ECECEC' : ' #0F222B'

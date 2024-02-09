@@ -1,5 +1,5 @@
 
-import 'E:/Shoes_Store/src/styles/Client_Page/footer.css'
+import '../../styles/Client_Page/footer.css'
 
 
 const FooterComponent = () => {

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useForm } from 'react-hook-form';
-import 'E:/Shoes_Store/src/styles/admin/dashboard.css'
+import '../..c/styles/admin/dashboard.css'
 import { useNavigate } from 'react-router-dom';
 
 
