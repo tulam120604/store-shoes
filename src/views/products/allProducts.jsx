@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import 'E:/Shoes_Store/src/styles/products/allProducts.css'
+import '../../styles/products/allProducts.css'
 import { Link } from 'react-router-dom';
 
 
