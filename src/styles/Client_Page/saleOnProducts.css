@@ -8,6 +8,8 @@
 
     /* block 1 */
     .block1 {
+        height: 100%;
+
         .ImageSale {
             width: 100%;
             overflow: hidden;
@@ -15,7 +17,7 @@
 
             img {
                 width: 100%;
-                height: 80%;
+                height: 700px;
                 transition: 0.3s;
             }
         }
