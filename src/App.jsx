@@ -16,10 +16,15 @@ import EditProductAdmin from './views/admin/editProduct'
 import AllCatelories from './views/admin/allCatelories'
 import Cart_Page from './views/Client_Page/cart'
 import ThanhToan_Page from './views/Client_Page/thanhToan'
-import Login_Page from './views/Client_Page/login'
+import Login_Page from './views/Client_Page/LoginPage/login'
+import CreateAccount_Page from './views/Client_Page/LoginPage/createAccount'
+import { createAccount, loginAccount } from './data/account'
 
 
 function App() {
+  if (window.scrollY) {
+    console.log(123);
+  }
   // switch theme page
   const [theme, setTheme] = useState(false)
   const switchTheme = () => {
@@ -84,7 +89,7 @@ function App() {
   const hanldeAddSP = async (san_pham_moi) => {
     try {
       const data = await addProductsAll(san_pham_moi);
-      alert('them san pham thanh cong')
+      // alert('them san pham thanh cong')
       setAllProducts([...allProducts, data])
     } catch (error) {
       console.log(error);
@@ -119,12 +124,31 @@ function App() {
       setMenuNavbarAdmin(dataNavBar)
     })()
   }
-
+  useEffect(getNavBarAdmin, [])
   // them san pham vao gio hang
   const addProductsToCart = () => {
     alert(123)
   }
-  useEffect(getNavBarAdmin, [])
+
+  // create account
+  const handleCreateAccountPage = async (account) => {
+    try {
+      const data = await createAccount(account);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  // login account
+  const handleLogin = async (account) => {
+    try {
+      const data = await loginAccount(account);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <>
       <div style={{ background: theme ? 'white' : '#191919', color: theme ? 'black' : 'white', transition: '0.5s' }}
@@ -174,7 +198,14 @@ function App() {
             <Route path='thanh_toan' element={<ThanhToan_Page />} />
 
             {/* login */}
-            <Route path='login' element={<Login_Page />} />
+            <Route path='login' element={<Login_Page
+              onLoginAccount={handleLogin}
+            />} />
+
+            {/* create account */}
+            <Route path='createAccount' element={<CreateAccount_Page
+              onCreateAccount={handleCreateAccountPage}
+            />} />
           </Route>
 
 

@@ -61,7 +61,7 @@ const FeaturedPage = ({ wrapperBg, ProductPage, CateloriesHomePage }) => {
                                 <div className="rating">
                                     {(starFeeback).map(() => {
                                         return (<>
-                                            <img src="../src/images/star.png" alt="" />
+                                            <img src="../../src/images/star.png" alt="" />
                                         </>)
                                     })}
                                 </div>

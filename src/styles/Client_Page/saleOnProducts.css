@@ -9,11 +9,11 @@
     /* block 1 */
     .block1 {
         height: 100%;
+        cursor: pointer;
 
         .ImageSale {
             width: 100%;
             overflow: hidden;
-            cursor: pointer;
 
             img {
                 width: 100%;
@@ -32,6 +32,7 @@
                 -webkit-text-stroke: 1px;
                 letter-spacing: 0.3px;
                 color: white;
+                cursor: auto;
             }
 
             span {
@@ -40,6 +41,7 @@
                 text-transform: uppercase;
                 -webkit-text-stroke: 1px;
                 font-weight: 500;
+                cursor: auto;
             }
 
             p {
@@ -48,6 +50,7 @@
                 letter-spacing: 0.5px;
                 margin: 10px 0 20px;
                 color: white;
+                cursor: auto;
             }
 
             button {

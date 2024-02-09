@@ -44,11 +44,11 @@ const HeaderComponent = ({ themeBg }) => {
           </div>
 
           <div className="menu">
-            <li><Link to='cart' ><img style={{ filter: imgColor }} src="../src/images/shopping-cart.png" alt="" /></Link>
+            <li><Link to='cart' ><img style={{ filter: imgColor }} src="../../src/images/shopping-cart.png" alt="" /></Link>
               <div className="soLuongSanPhamTrongGio">{countItemCarts}</div>
             </li>
             <li>{themeBg.switch}</li>
-            <li><button>đăng nhập</button></li>
+            <li><Link to='login'><button>đăng nhập</button></Link></li>
           </div>
         </header>
         {/* Router */}

@@ -401,5 +401,27 @@
       "path": "accountAdmin"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "123@abc.xyz",
+      "password": "$2a$10$mEaEvYfJtoGSU8LLHZz2POZz24eZZ7EXHtlk8qT2j7/YTGlB1FZQi",
+      "userAccount": "user1",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "email": "123@abc.nv",
+      "password": "$2a$10$m5KgQO4mAB2Okn9.CER9rOHiwgJABiVQgZppClKb8ES1d7ayxwNN6",
+      "userAccount": "user1",
+      "confirmPassword": "123456",
+      "id": 2
+    },
+    {
+      "email": "123@jqk.xzy",
+      "password": "$2a$10$uv./EeCZymE9cy1R0cnTjOvDGt792ER25lcb8Jh8veA9OMYrKXFVu",
+      "userAccount": "1234",
+      "confirmPassword": "123456",
+      "id": 3
+    }
+  ]
 }

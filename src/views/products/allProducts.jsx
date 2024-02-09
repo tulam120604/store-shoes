@@ -50,7 +50,7 @@ const AllProducts = ({ all_san_pham, wrapper }) => {
     listPage()
 
     const handlePage = (d) => {
-        console.log(d);
+        // console.log(d);
     }
 
     const renderListPage = (dataCallback) => {
